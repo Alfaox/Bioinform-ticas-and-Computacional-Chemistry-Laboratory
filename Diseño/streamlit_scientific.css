@@ -1,0 +1,243 @@
+/* ==========================================
+   STREAMLIT - DISEÑO CIENTÍFICO UCM
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* Global Styles */
+.stApp {
+    background: linear-gradient(to bottom, #0f172a 0%, #020617 100%);
+}
+
+/* Header estilo journal */
+.scientific-header {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    padding: 2rem 2.5rem;
+    border-bottom: 3px solid #334155;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.institution-badge {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.badge-logo {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.institution-info {
+    flex: 1;
+}
+
+.institution-name {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.lab-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.pipeline-subtitle {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Protocol Panel */
+.protocol-panel {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid #334155;
+    border-left: 4px solid #3b82f6;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.protocol-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.protocol-content {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* Result Cards - Scientific Style */
+.result-card {
+    background: rgba(2, 6, 23, 0.6);
+    border: 1px solid #1e293b;
+    border-left: 4px solid #64748b;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-metric {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin: 0.25rem 0;
+}
+
+.metric-value {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 0.5rem;
+}
+
+.badge-success {
+    background: rgba(34, 197, 94, 0.2);
+    color: #86efac;
+    border: 1px solid #22c55e;
+}
+
+.badge-warning {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fcd34d;
+    border: 1px solid #f59e0b;
+}
+
+.badge-error {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fecaca;
+    border: 1px solid #ef4444;
+}
+
+/* Status-specific card colors */
+.card-success {
+    border-left-color: #22c55e;
+    background: linear-gradient(to right, rgba(34, 197, 94, 0.05), rgba(2, 6, 23, 0.6));
+}
+
+.card-warning {
+    border-left-color: #f59e0b;
+    background: linear-gradient(to right, rgba(245, 158, 11, 0.05), rgba(2, 6, 23, 0.6));
+}
+
+.card-error {
+    border-left-color: #ef4444;
+    background: linear-gradient(to right, rgba(239, 68, 68, 0.08), rgba(2, 6, 23, 0.6));
+}
+
+/* Buttons */
+div.stButton>button {
+    background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+    color: white !important;
+    border: none !important;
+    padding: 0.65rem 1.5rem !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s !important;
+}
+
+div.stButton>button:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Text inputs */
+.stTextArea textarea {
+    background: rgba(2, 6, 23, 0.8) !important;
+    border: 1px solid #334155 !important;
+    color: #e5e7eb !important;
+    border-radius: 6px !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #60a5fa !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15) !important;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    color: #f8fafc !important;
+}
+
+h2 {
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+}
+
+h3 {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+
+/* Code blocks */
+code {
+    background: rgba(51, 65, 85, 0.5) !important;
+    color: #60a5fa !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 4px !important;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background: rgba(30, 41, 59, 0.4) !important;
+    border: 1px solid #334155 !important;
+    border-radius: 6px !important;
+    color: #cbd5e1 !important;
+}
+
+/* Captions */
+.stCaption {
+    color: #94a3b8 !important;
+    font-size: 0.85rem !important;
+}

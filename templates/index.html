@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bioinformática Estructural | UCM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <img src="img/ucm.png" alt="UCM" class="logo ucm">
+        </div>
+
+        <div class="topbar-center">
+            <h1>Laboratorio de Bioinformática y Química Computacional</h1>
+            <p>Universidad Católica del Maule</p>
+        </div>
+
+        <div class="topbar-right">
+            <img src="img/lab.png" alt="Laboratorio" class="logo lab">
+        </div>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="panel input-panel">
+            <h2>Entrada estructural</h2>
+
+            <label>PDB ID o secuencia</label>
+            <textarea placeholder="Ej: 1CRN o MVLSPADKTNVKAA..."></textarea>
+
+            <button>Ejecutar análisis</button>
+        </section>
+
+        <section class="panel structure-panel">
+            <h2>Estructura</h2>
+
+            <div class="structure-view">
+                <span>Visualización 3D (placeholder)</span>
+            </div>
+
+            <div class="structure-metrics">
+                <div><strong>Longitud:</strong> 124 aa</div>
+                <div><strong>Fold:</strong> α/β</div>
+                <div><strong>Resolución:</strong> 1.9 Å</div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="analysis">
+
+        <h2>Pipeline de análisis estructural</h2>
+
+        <div class="analysis-grid">
+
+            <div class="analysis-box ok">
+                <h3>Dominio de Aplicabilidad</h3>
+                <p>Similitud estructural válida</p>
+                <span class="status ok">IN-DOMAIN</span>
+            </div>
+
+            <div class="analysis-box warn">
+                <h3>Calidad del modelo</h3>
+                <p>MolProbity elevado</p>
+                <span class="status warn">ALERTA</span>
+            </div>
+
+            <div class="analysis-box disabled">
+                <h3>Similitud funcional</h3>
+                <p>No evaluada</p>
+            </div>
+
+            <div class="analysis-box disabled">
+                <h3>Inferencia funcional</h3>
+                <p>No evaluada</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        Bioinformática Estructural · UCM · Análisis computacional sin validación experimental
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "FP_RADIUS": 2,
+  "FP_NBITS": 2048,
+  "DOA_K": 5,
+  "DOA_PERCENTILE": 5,
+  "DOA_THRESHOLD": 0.36,
+  "THR_DSSTOX": 0.5,
+  "THR_CLUE": 0.5,
+  "THR_UIREF": 0.5,
+  "LABELS": [
+    "DSSTOX",
+    "CLUE",
+    "UIREF",
+    "COCONUT"
+  ],
+  "NOTE": "Modelos Random Forest Optimizados (MCC/Recall). Validado con Scaffold Split."
+}
